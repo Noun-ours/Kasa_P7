@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-
+import logo from '../images/LOGO.png'
 export default function Header() {
     return (
         <header className="App-header">
             <div className='logo-nav'>
-                <img src="./images/LOGO.png" alt="" />
+                <img src={logo} alt="logo de Kasa" />
                 {/* <h1>
                     Kasa
                 </h1> */}

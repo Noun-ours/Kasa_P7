@@ -2,21 +2,25 @@ import React from 'react';
 // import React, { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
 import apparts from "../data/logements.json"
-import Appartcomposant from '../composants/Appartcomposant';
+import { json, useParams } from 'react-router-dom';
 
 
-const Appart = (appartement) => {
+const Appart = () => {
+    const { id } = useParams();
+    const appartement = apparts.find(appart => appart.id === id)
     return (
         // <Link to="/appart" className='fiche-appartement'>
         // </Link>
         <section className='fiche-resume'>
+
             <h3>
                 Appartement
-                {appartement.pictures}
+                {id}
+                {JSON.stringify(appartement)}
             </h3>
             <div className='fiche-appartement'>
                 <div className='interieur'>
-                    {apparts.map(appart => <Appartcomposant appartement={appart} />)}
+
                 </div>
                 <input type="checkbox" name="" id="" />
             </div>

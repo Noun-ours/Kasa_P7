@@ -1,3 +1,4 @@
+import Accordeon from "../composants/Accordeon";
 
 
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
 
                 </div>
             </div>
-
+            <Accordeon etiquette={"etiquette teste"} contenu={"contenue teste"} />
             <div className="accordeon">
                 <div className="zoneDeContenu">
                     <div className="etiquette">Fiabilité,</div>
