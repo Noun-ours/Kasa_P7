@@ -1,8 +1,37 @@
-// .logo-nav {
-//   background-color: rgb(26, 181, 63);
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   align-items: stretch;
-//   width: 1150px;
-// }
+.logo-nav {
+  position: relative;
+  // background-color: rgb(26, 181, 63);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  // align-items: stretch;
+  width: 1240px;
+  height: 100px;
+  img {
+    background-image: url(../images/LOGO.png);
+    // position: absolute;
+    width: 211px;
+    height: 66px;
+  }
+  nav {
+    display: flex;
+    gap: 200px;
+    height: 100%;
+  }
+  ul {
+    // gap: 20px;
+    display: flex;
+    height: 100%;
+  }
+  li {
+    // position:absolute;
+    color: #ff6060;
+
+    width: 150px;
+    height: 100%;
+    // background-color: coral;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

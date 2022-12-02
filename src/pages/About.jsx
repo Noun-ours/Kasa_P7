@@ -2,19 +2,100 @@
 
 const About = () => {
     return (
-        <div>
+        <main>
+
+            <div className="liste-appartements">
+
+                <div className="slogan">
 
 
-            <h1>A propos</h1>
-            <br />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis culpa iste enim cumque amet accusamus magni cum? Doloribus sed cum, assumenda beatae accusamus maxime, minima aliquid accusantium praesentium esse animi doloremque atque recusandae, nam quidem possimus ab nulla dolore libero at. Ab officia doloremque, nemo sint atque qui exercitationem expedita odio praesentium beatae, reiciendis maxime quibusdam saepe at dignissimos, dolores obcaecati. Impedit voluptas veniam cumque provident facilis sequi consequuntur.
-            </p>
-            <br />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dolore sed rem nesciunt vel sunt quos debitis ratione. Illum, repellendus obcaecati exercitationem repellat aspernatur corrupti quas ipsa ducimus. Unde rerum veniam ipsa adipisci quibusdam pariatur recusandae, optio molestiae eveniet maxime, dolorum itaque voluptate libero incidunt sequi minima, facere ullam accusamus tempore commodi consequatur reprehenderit repudiandae fuga eligendi. Optio quod cumque ab eos. Ut eius beatae totam cumque placeat et veniam adipisci laboriosam quibusdam, maxime excepturi, neque ipsum dolorem nemo dignissimos dolorum! Fugiat quibusdam ad mollitia dolor, dolores vel, iste nostrum esse aperiam incidunt quisquam maiores molestias eos, veniam magnam non. Dignissimos nobis impedit minima asperiores deserunt consequuntur quaerat sint nulla repellat rem, voluptatum culpa vero sed repellendus minus possimus doloremque? Nam cupiditate, quod rerum consectetur unde aut earum! Asperiores veniam distinctio atque ipsa eligendi maiores eos voluptates aut rerum. Consectetur recusandae reiciendis magnam eius voluptatibus exercitationem fugit possimus eveniet nesciunt maiores eaque beatae perspiciatis praesentium sint, ab quasi doloremque?
+                </div>
+            </div>
 
-            </p>
-        </div>
+            <div className="accordeon">
+                <div className="zoneDeContenu">
+                    <div className="etiquette">Fiabilité,</div>
+                    <div className="contenu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam sapiente illum cupiditate, reprehenderit
+                            numquam a! Officia exercitationem, totam eligendi assumenda delectus
+                            reprehenderit asperiores illum error minima. Praesentium vitae corporis expedita, aperiam vel quidem totam eius earum impedit perferendis esse fugiat enim porro voluptas quia distinctio tempora aut quaerat eaque ullam consectetur nostrum! Magnam, modi veritatis quisquam dolor ducimus iusto possimus facilis vel
+                            ipsam aperiam consequuntur odit cumque
+                            doloribus corporis ipsa, numquam distinctio asperiores corrupti fuga incidunt in dolorum? Harum odio, dolore, nulla modi illum minus reprehenderit iusto, exercitationem ipsa nesciunt unde reiciendis veniam sed
+                            numquam recusandae quod inventore. Libero?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="accordeon">
+                <div className="zoneDeContenu">
+                    <div className="etiquette">Respect</div>
+                    <div className="contenu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam sapiente illum cupiditate, reprehenderit
+                            numquam a! Officia exercitationem, totam eligendi assumenda delectus
+                            reprehenderit asperiores illum error minima. Praesentium vitae corporis expedita, aperiam vel quidem totam eius earum impedit perferendis esse fugiat enim porro voluptas quia distinctio tempora aut quaerat eaque ullam consectetur nostrum! Magnam, modi veritatis quisquam dolor ducimus iusto possimus facilis vel
+                            ipsam aperiam consequuntur odit cumque
+                            doloribus corporis ipsa, numquam distinctio asperiores corrupti fuga incidunt in dolorum? Harum odio, dolore, nulla modi illum minus reprehenderit iusto, exercitationem ipsa nesciunt unde reiciendis veniam sed
+                            numquam recusandae quod inventore. Libero?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="accordeon">
+                <div className="zoneDeContenu">
+                    <div className="etiquette">Service</div>
+                    <div className="contenu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam sapiente illum cupiditate, reprehenderit
+                            numquam a! Officia exercitationem, totam eligendi assumenda delectus
+                            reprehenderit asperiores illum error minima. Praesentium vitae corporis expedita, aperiam vel quidem totam eius earum impedit perferendis esse fugiat enim porro voluptas quia distinctio tempora aut quaerat eaque ullam consectetur nostrum! Magnam, modi veritatis quisquam dolor ducimus iusto possimus facilis vel
+                            ipsam aperiam consequuntur odit cumque
+                            doloribus corporis ipsa, numquam distinctio asperiores corrupti fuga incidunt in dolorum? Harum odio, dolore, nulla modi illum minus reprehenderit iusto, exercitationem ipsa nesciunt unde reiciendis veniam sed
+                            numquam recusandae quod inventore. Libero?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="accordeon">
+                <div className="zoneDeContenu">
+                    <div className="etiquette">,Responsabilité</div>
+                    <div className="contenu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam sapiente illum cupiditate, reprehenderit
+                            numquam a! Officia exercitationem, totam eligendi assumenda delectus
+                            reprehenderit asperiores illum error minima. Praesentium vitae corporis expedita, aperiam vel quidem totam eius earum impedit perferendis esse fugiat enim porro voluptas quia distinctio tempora aut quaerat eaque ullam consectetur nostrum! Magnam, modi veritatis quisquam dolor ducimus iusto possimus facilis vel
+                            ipsam aperiam consequuntur odit cumque
+                            doloribus corporis ipsa, numquam distinctio asperiores corrupti fuga incidunt in dolorum? Harum odio, dolore, nulla modi illum minus reprehenderit iusto, exercitationem ipsa nesciunt unde reiciendis veniam sed
+                            numquam recusandae quod inventore. Libero?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="accordeon">
+                <div className="zoneDeContenu">
+                    <div className="etiquette">Securité</div>
+                    <div className="contenu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quibusdam sapiente illum cupiditate, reprehenderit
+                            numquam a! Officia exercitationem, totam eligendi assumenda delectus
+                            reprehenderit asperiores illum error minima. Praesentium vitae corporis expedita, aperiam vel quidem totam eius earum impedit perferendis esse fugiat enim porro voluptas quia distinctio tempora aut quaerat eaque ullam consectetur nostrum! Magnam, modi veritatis quisquam dolor ducimus iusto possimus facilis vel
+                            ipsam aperiam consequuntur odit cumque
+                            doloribus corporis ipsa, numquam distinctio asperiores corrupti fuga incidunt in dolorum? Harum odio, dolore, nulla modi illum minus reprehenderit iusto, exercitationem ipsa nesciunt unde reiciendis veniam sed
+                            numquam recusandae quod inventore. Libero?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
     );
+
 };
+// const accordeon = document.getElementsByClassName("zoneDeContenu");
+// for (i = 0; i < accordeon.length; i++) {
+//     accordeon[i].addEventListener("click", function () {
+//         this.classList.toggle("active")
+//     })
+// }
 
 export default About;

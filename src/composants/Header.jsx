@@ -5,13 +5,15 @@ export default function Header() {
         <header className="App-header">
             <div className='logo-nav'>
                 <img src="./images/LOGO.png" alt="" />
-                <h1>
+                {/* <h1>
                     Kasa
-                </h1>
+                </h1> */}
                 <nav >
                     <ul>
                         <li><Link to="/">accueil</Link></li>
                         <li><Link to="/about">à propos</Link></li>
+                        <li><Link to="/testaccordeon">test</Link></li>
+
                     </ul>
                 </nav>
             </div>

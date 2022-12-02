@@ -1,0 +1,14 @@
+.accordeon {
+  max-width: 800px;
+}
+.accordeon .zoneDeContenu {
+  position: relative;
+  margin: 10px 20px;
+}
+.accordeon .zoneDeContenu .etiquette {
+  position: relative;
+  padding: 10px;
+  background-color: #ff6060;
+  color: white;
+  cursor: pointer;
+}

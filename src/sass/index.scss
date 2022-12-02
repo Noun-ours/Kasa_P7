@@ -8,7 +8,7 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
-
+@import "./_banniere";
 @import "./carte";
 @import "./logo-nav";
 body {
@@ -21,30 +21,34 @@ body {
 }
 
 #root {
-  background: #e5e5e5;
+  background: white;
   color: rgb(18, 17, 15);
 }
 .App-header {
-  background: #e5e5e5;
+  position: relative;
+  // background: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(233, 48, 48);
+
+  // color: rgb(233, 48, 48);
 }
-.logo-nav {
-  background-color: rgb(26, 181, 63);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: stretch;
-  width: 1150px;
-}
+// .logo-nav {
+//   background-color: rgb(26, 181, 63);
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: row;
+//   align-items: stretch;
+//   width: 1150px;
+// }
 main {
+  // width: 1240px;
   min-height: calc(100vh - 130px);
 }
 .liste-appartements {
+  // position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,32 +63,133 @@ main {
   gap: 40px;
 }
 
-.slogan {
-  width: 1150px;
-  height: 200px;
-  border: 1px solid rgb(54, 19, 19);
-  margin-bottom: 20px;
-  border-radius: 15px;
-  background-color: aqua;
-  text-align: center;
-  font-size: 30px;
-  background-image: url(../images/IMG.png);
-}
-
 .fiche-resume {
   display: flex;
   background-image: url(../images/Background.png);
-  justify-content: center;
+  // justify-content: center;
   background-size: cover;
   // height: 100px;
   // flex-direction: column;
   flex-direction: row;
   margin: 0 auto;
+  width: 1240px;
 }
 .fiche-appartement {
-  display: block;
+  display: flex;
   width: 1050px;
   height: 415px;
 
   // background-color: aqua;
+}
+
+.accoordeon {
+  // display: flex;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.accordeon-item {
+  width: 480px;
+  background-color: aquamarine;
+  color: #111;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+.accordeon-item-entete {
+  padding: 10px 30px 10px 15px;
+  min-height: 50px;
+  // line-height: 20px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordeon-item-entete::after {
+  content: "\0245 \039B\21EC\21EE\21F3\2227\2228\276E\276F";
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  transition: transform 0.5s ease-in-out;
+}
+.accordeon-item-entete.active::after {
+  content: "\2227";
+  transform: rotate(180deg);
+}
+.accordeon-item-body {
+  // display: none;
+  max-height: 0;
+  overflow: hidden;
+  // padding: 15px;
+  line-height: 20px;
+  border-top: 5px solid red;
+  border-image: linear-gradient(to left, transparent, #008f68, transparent) 1;
+  transition: max-height 0.5s ease-out;
+}
+.accordeon-item-body-content {
+}
+.accordeon-item-entete.active + .accordeon-item-body {
+  // display: block;
+  // max-height: 400px;
+}
+.accordeon {
+  // max-width: 800px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+.accordeon .zoneDeContenu {
+  position: relative;
+  // margin: 10px 20px;
+
+  background-color: aquamarine;
+  color: #111;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+.accordeon .zoneDeContenu .etiquette {
+  position: relative;
+  // padding: 10px;
+  background-color: #ff6060;
+  color: white;
+  cursor: pointer;
+
+  padding: 10px 30px 10px 15px;
+  min-height: 50px;
+  // line-height: 20px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  position: relative;
+  // cursor: pointer;
+}
+.accordeon .zoneDeContenu .etiquette::after {
+  content: "\0245 \039B\21EC\21EE\21F3\2227\2228\276E\276F";
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  // transform: translateY(-50%);
+  transition: transform 0.5s ease-in-out;
+}
+.accordeon .zoneDeContenu .etiquette.active::after {
+  content: "\2227";
+  transform: rotate(180deg);
+}
+.contenu {
+  // display: none;
+  max-height: 0;
+  overflow: hidden;
+  // padding: 15px;
+  line-height: 20px;
+  overflow-y: auto;
+  border-top: 5px solid red;
+  border-image: linear-gradient(to left, transparent, #008f68, transparent) 1;
+  transition: 0.5s ease-out;
+}
+.zoneDeContenu.active .contenu {
+  height: 100%;
+  padding: 15px;
 }

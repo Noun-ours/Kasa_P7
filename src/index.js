@@ -7,6 +7,8 @@ import About from "./pages/About";
 import Header from "./composants/Header";
 import Footer from "./composants/Footer";
 import Appart from './pages/Appart';
+import Accordeon from './composants/Accordeon';
+import TestAccordeon from './pages/TestAccordeon';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +21,8 @@ root.render(
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
         <Route path="/appart" element={<Appart />} />
+        <Route path="/testaccordeon" element={<TestAccordeon />} />
+
 
       </Routes>
       <Footer />

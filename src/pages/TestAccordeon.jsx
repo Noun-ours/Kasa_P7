@@ -1,11 +1,8 @@
 
-import React from "react";
-import { Link } from "react-router-dom";
 
-
-export default function Accordeon() {
+const TestAccordeon = () => {
     return (
-        <Link>
+        <section>
 
             <div className="accordeon">
                 <div className="zoneDeContenu">
@@ -82,8 +79,7 @@ export default function Accordeon() {
                 </div>
             </div>
 
-        </Link>
-
+        </section>
     );
 };
 let i = 0
@@ -95,29 +91,4 @@ for (i = 0; i < accordeon.length; i++) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-// import React from "react";
-
-
-// const accordeonItemEntetes = document.querySelectorAll(".accordeon-item-entete");
-// accordeonItemEntetes.forEach(accordeonItemEntete => {
-//     accordeonItemEntete.addEventListener("click", event => {
-//         accordeonItemEntete.classList.toggle("active");
-//         const accordeonItemBody = accordeonItemEntete.nextElementSibling;
-//         if (accordeonItemEntete.classList.contains("active")) {
-//             accordeonItemBody.style.maxHeight = accordeonItemBody.scrollHeight + "px;"
-//         }
-//         else {
-//             accordeonItemBody.style.maxHeight = 0;
-//         }
-//     });
-// });
+export default TestAccordeon;

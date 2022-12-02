@@ -1,0 +1,12 @@
+.accordeon {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  .accordeon-item {
+    background-color: aquamarine;
+    color: #111;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  }
+}

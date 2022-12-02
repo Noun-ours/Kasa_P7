@@ -1,7 +1,7 @@
 import React from 'react';
 // import React, { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
-import Apparts from "../data/logements.json"
+import apparts from "../data/logements.json"
 import Appartcomposant from '../composants/Appartcomposant';
 
 
@@ -10,13 +10,13 @@ const Appart = (appartement) => {
         // <Link to="/appart" className='fiche-appartement'>
         // </Link>
         <section className='fiche-resume'>
+            <h3>
+                Appartement
+                {appartement.pictures}
+            </h3>
             <div className='fiche-appartement'>
-                <h3>
-                    Appartement
-                    {appartement.pictures}
-                </h3>
                 <div className='interieur'>
-                    {Apparts.map(appart => <Appartcomposant appartement={appart} />)}
+                    {apparts.map(appart => <Appartcomposant appartement={appart} />)}
                 </div>
                 <input type="checkbox" name="" id="" />
             </div>
