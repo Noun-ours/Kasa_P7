@@ -3,28 +3,25 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import apparts from "../data/logements.json"
 import { json, useParams } from 'react-router-dom';
-
+import Carrousel from "../composants/Carrousel"
 
 const Appart = () => {
     const { id } = useParams();
-    const appartement = apparts.find(appart => appart.id === id)
+    const appt = apparts.find(appart => appart.id === id)
     return (
         // <Link to="/appart" className='fiche-appartement'>
         // </Link>
-        <section className='fiche-resume'>
-
-            <h3>
-                Appartement
-                {id}
-                {JSON.stringify(appartement)}
-            </h3>
+        <main className='fiche-resume'>
             <div className='fiche-appartement'>
-                <div className='interieur'>
-
-                </div>
-                <input type="checkbox" name="" id="" />
+                <img src={appt.cover} className="cover" alt="" />
+                <Carrousel carousel={appt.pictures} />
             </div>
-        </section>
+            <h3>
+
+                {appt.title}
+
+            </h3>
+        </main>
     );
 };
 
