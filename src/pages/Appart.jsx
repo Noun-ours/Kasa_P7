@@ -1,27 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import React, { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
 import apparts from "../data/logements.json"
+import images from "../data/logements.json"
 import { json, useParams } from 'react-router-dom';
 import Carrousel from "../composants/Carrousel"
+import Accordeon from "../composants/Accordeon"
+
+
 
 const Appart = () => {
     const { id } = useParams();
     const appt = apparts.find(appart => appart.id === id)
+    const notation = [1, 2, 3, 4, 5]
     return (
-        // <Link to="/appart" className='fiche-appartement'>
-        // </Link>
-        <main className='fiche-resume'>
-            <div className='fiche-appartement'>
-                <img src={appt.cover} className="cover" alt="" />
-                <Carrousel carousel={appt.pictures} />
+
+        <div className='page-appart'>
+            <Carrousel images={appt.pictures} />
+
+            <section className='info-appart'>
+                <div className='description'>
+                    <h3> {appt.title} </h3>
+                    <h4>{appt.location} </h4>
+                    <div>
+                        {appt.tags.map(tag => <span>{tag} </span>)}
+                    </div>
+                </div>
+                <div className='fototag' >
+                    <div className='info-hote'>
+                        {appt.host.name}
+                        <img src={appt.host.picture} alt={appt.host.name} />
+                    </div>
+                    <div className='notation'>
+                        {notation.map}
+                        {appt.rating} &#2729;
+                    </div>
+                </div>
+            </section>
+            <div>
+                <Accordeon etiquette={"description"} contenu={[appt.description]} />
+                <Accordeon etiquette={"equipements"} contenu={[appt.equipments]} />
             </div>
-            <h3>
-
-                {appt.title}
-
-            </h3>
-        </main>
+        </div>
     );
 };
 

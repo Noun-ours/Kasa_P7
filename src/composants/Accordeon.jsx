@@ -8,7 +8,7 @@ export default function Accordeon(props) {
     return (
         <div className="accordeon">
             <div className={active ? "zoneDeContenu active" : "zoneDeContenu"} onClick={() => { setActive(!active) }}>
-                <div className="etiquette">{props.etiquette} </div>
+                <div className="etiquette">{props.etiquette} <span>&#10095;</span> </div>
                 <div className="contenu">
                     <p>{props.contenu}
                     </p>

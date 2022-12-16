@@ -1,14 +1,43 @@
 .accordeon {
   max-width: 800px;
-}
-.accordeon .zoneDeContenu {
-  position: relative;
-  margin: 10px 20px;
-}
-.accordeon .zoneDeContenu .etiquette {
-  position: relative;
-  padding: 10px;
-  background-color: #ff6060;
-  color: white;
-  cursor: pointer;
+
+  .zoneDeContenu {
+    position: relative;
+    font-weight: 400;
+    margin: 10px 20px;
+    // height: 300px;
+    .etiquette {
+      position: relative;
+      padding: 10px;
+      background-color: #ff6060;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  span {
+    position: absolute;
+    right: 15px;
+    transform: rotate(90deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  .active {
+    span {
+      transform: rotate(270deg);
+    }
+  }
+  .contenu {
+    // display: none;
+    max-height: 0;
+    overflow: hidden;
+    // padding: 15px;
+    line-height: 20px;
+    overflow-y: auto;
+    border-top: 5px solid red;
+    border-image: linear-gradient(to left, transparent, #008f68, transparent) 1;
+    transition: 0.5s ease-out;
+  }
+  .zoneDeContenu.active .contenu {
+    height: 100%;
+    padding: 15px;
+  }
 }

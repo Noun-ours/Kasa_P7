@@ -7,28 +7,21 @@ import About from "./pages/About";
 import Header from "./composants/Header";
 import Footer from "./composants/Footer";
 import Appart from './pages/Appart';
-import Accordeon from './composants/Accordeon';
-import TestAccordeon from './pages/TestAccordeon';
-
+import Error404 from './pages/Error404';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/about" element={<About />} />
         <Route path="/appart/:id" element={<Appart />} />
-
-        <Route path="/testaccordeon" element={<TestAccordeon />} />
-
-
+        <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>
-
   </React.StrictMode>
 );
 

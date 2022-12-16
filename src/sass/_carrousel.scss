@@ -1,14 +1,29 @@
 .carouselConteuneur {
-  max-width: 800px;
+  position: relative;
+  background-color: bisque;
+  width: 1000px;
   margin: 0 auto;
-  padding: 50px;
+  height: 450px;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url();
 }
 .slider img {
-  max-width: 100%;
+  // width: calc(500px * 4);
+  width: 100%;
 }
-img.active {
+img.activefoto {
   display: block;
   animation: fade 0.8s;
+  height: 100%;
+  width: 100%;
 }
 @keyframes fade {
   from {
@@ -18,14 +33,43 @@ img.active {
     opacity: 1;
   }
 }
-.boiteAbouton {
-  width: 100%;
-  height: auto;
-  border: 1px solid black;
-  box-shadow: 0 10px 10px black;
-}
+// .boiteAbouton {
+//   position: relative;
+//   width: 100%;
+//   height: auto;
+//   border: 1px solid black;
+//   box-shadow: 0 10px 10px black;
+// }
 .btnNav {
-  font-size: larger;
+  position: absolute;
+  height: 85px;
+  width: 50px;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  color: white;
+  font-size: 80px;
   margin: 0 15px;
+  border: none;
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+}
+.droite {
+  content: "\276F";
+
+  right: 15px;
+  top: 50%;
+}
+.gauche {
+  content: "\276E";
+  left: 15px;
+  top: 50%;
+}
+.index-slide {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  font-size: 20px;
+  right: 50%;
 }
