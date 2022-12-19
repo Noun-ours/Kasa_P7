@@ -1,0 +1,20 @@
+.erreur {
+  //   width: 600px;
+  margin: 50px auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ff6060;
+  background-color: aquamarine;
+  h1 {
+    font-size: 290px;
+    // color: #ff6060;
+    font-weight: 700;
+    p {
+      font-weight: 700;
+      //   color: #ff6060;
+    }
+  }
+}

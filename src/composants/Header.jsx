@@ -12,7 +12,7 @@ export default function Header() {
                     <ul>
                         <li><Link to="/">accueil</Link></li>
                         <li><Link to="/about">à propos</Link></li>
-                        <li><Link to="/testaccordeon">test</Link></li>
+                        {/* <li><Link to="/testaccordeon">test</Link></li> */}
 
                     </ul>
                 </nav>

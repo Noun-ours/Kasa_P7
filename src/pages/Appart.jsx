@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 // import React, { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
 import apparts from "../data/logements.json"
-import images from "../data/logements.json"
-import { json, useParams } from 'react-router-dom';
+// import images from "../data/logements.json"
+import { useParams } from 'react-router-dom';
 import Carrousel from "../composants/Carrousel"
 import Accordeon from "../composants/Accordeon"
-
+// import Notation from '../composants/Notation';
 
 
 const Appart = () => {
@@ -32,16 +32,19 @@ const Appart = () => {
                         <img src={appt.host.picture} alt={appt.host.name} />
                     </div>
                     <div className='notation'>
-                        {notation.map}
-                        {appt.rating} &#2729;
+                        &#9734;&#9734;&#9734;
+                        {appt.rating}
+                        <i className="fa-thin fa-star">&#9734;&#9734;</i>
+                        {/* <Notation etoiles /> */}
+                        <i className="fa-solid fa-star">&#10029;&#10029;</i>
                     </div>
                 </div>
-            </section>
-            <div>
-                <Accordeon etiquette={"description"} contenu={[appt.description]} />
-                <Accordeon etiquette={"equipements"} contenu={[appt.equipments]} />
+            </section >
+            <div className='accordeon-appart'>
+                <Accordeon className='accordeon-appart' etiquette={"description"} contenu={[appt.description]} />
+                <Accordeon className='accordeon-appart' etiquette={"equipements"} contenu={[appt.equipments]} />
             </div>
-        </div>
+        </div >
     );
 };
 
