@@ -48,21 +48,24 @@ main {
   min-height: calc(100vh - 130px);
 }
 .liste-appartements {
-  // position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  // border: 10px solid red;
 }
 .cartes-appartements {
   display: flex;
+  margin: 0 auto;
+  max-width: 1240px;
   justify-content: center;
   align-items: center;
   align-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
-  background-color: gainsboro;
+  background-color: #6f6f6f;
   height: 100%;
   padding: 35px;
 }
@@ -133,13 +136,18 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 25px;
+  margin: 0 0 20px;
   border-radius: 10px;
-  max-width: auto;
+  // max-width: 550px;
+  background-color: aqua;
+  .accordeon {
+    max-width: 500px;
+  }
 }
 footer {
   background-color: #000000;
   text-align: center;
-  max-width: 1440px;
+  max-width: 100%;
   height: 210px;
   color: white;
   .logo-footer {
@@ -152,4 +160,17 @@ footer {
       color: white;
     }
   }
+}
+.notation {
+  position: relative;
+  display: inline-block;
+}
+.notation::before {
+  content: "\ f005 \ f005\ f005\ f005\ f005 ";
+  font-weight: 900;
+}
+.etoile-star {
+  position: absolute;
+  overflow: hidden;
+  content: "\ f005 \ f005\ f005\ f005\ f005 ", "&#9734;";
 }

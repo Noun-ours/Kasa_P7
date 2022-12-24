@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import React, { useEffect, useState } from 'react';
 // import { Link } from 'react-router-dom';
 import apparts from "../data/logements.json"
@@ -12,13 +12,16 @@ import Accordeon from "../composants/Accordeon"
 const Appart = () => {
     const { id } = useParams();
     const appt = apparts.find(appart => appart.id === id)
-    const notation = [1, 2, 3, 4, 5]
+    const notationColore = Array(5).fill(<i className="fa-solid fa-star"></i>)
+    const notationClairs = Array(5).fill(<i className="fa-thin fa-star"></i>)
+    // const notationCla = Array(5).fill(<i className="fa-thin fa-star"></i>);
+
     return (
 
         <div className='page-appart'>
             <Carrousel images={appt.pictures} />
 
-            <section className='info-appart'>
+            <section className='info-appart'>&#10029;&#9734;
                 <div className='description'>
                     <h3> {appt.title} </h3>
                     <h4>{appt.location} </h4>
@@ -32,13 +35,30 @@ const Appart = () => {
                         <img src={appt.host.picture} alt={appt.host.name} />
                     </div>
                     <div className='notation'>
-                        &#9734;&#9734;&#9734;
-                        {appt.rating}
-                        <i className="fa-thin fa-star">&#9734;&#9734;</i>
-                        {/* <Notation etoiles /> */}
-                        <i className="fa-solid fa-star">&#10029;&#10029;</i>
+                        <div className="etoile-star">
+                            {appt.rating}
+
+
+
+                            {notationColore.slice(5 - appt.rating).map(notationColor => {
+                                return <span>{notationColor}</span>
+                            }
+                            )}
+                            {notationClairs.slice(appt.rating).map(notationClair => {
+                                return <span>{notationClair}</span>
+                            }
+                            )}
+
+
+
+
+                        </div>
                     </div>
                 </div>
+
+                <div className="etoile-star">
+                </div>
+
             </section >
             <div className='accordeon-appart'>
                 <Accordeon className='accordeon-appart' etiquette={"description"} contenu={[appt.description]} />

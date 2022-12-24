@@ -3,27 +3,28 @@
   display: flex;
   max-width: 1240px;
   height: 223px;
-  border: 1px solid rgb(54, 19, 19);
   margin-bottom: 20px;
-  border-radius: 15px;
-  text-align: center;
   justify-content: center;
+  align-items: center;
   font-size: 30px;
-  // background-image: url(../images/IMG.png);
-  // object-fit: cover;
+  font-weight: 500;
+  // box-shadow: 1px 1px 5px 1px black;
+
+  // // background-image: url(../images/IMG.png);
   h2 {
-    // width: 100%;
-    // position: absolute;
-    z-index: 1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    size: 48px;
-    color: rgb(28, 27, 27);
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    height: auto;
+    z-index: 2;
+    text-align: center;
+    color: white;
   }
-  .image-banniere {
-    max-width: 100%;
+  img {
+    width: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    height: auto;
+    mix-blend-mode: darken;
   }
 }

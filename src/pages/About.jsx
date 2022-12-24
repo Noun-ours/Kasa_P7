@@ -8,8 +8,9 @@ const About = () => {
             <div className="liste-appartements">
 
                 <div className="slogan">
-                    <img src={banniere} alt="" />
-
+                    <h1>
+                        <img src={banniere} alt="" />
+                    </h1>
                 </div>
             </div>
             <Accordeon etiquette={"Fiablilité"} contenu={"Les annonces postées sur Kasa garantissent une fiabilité totale.  Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."} />

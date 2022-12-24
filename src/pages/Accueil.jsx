@@ -8,14 +8,16 @@ const Accueil = () => {
                 <div className="liste-appartements">
 
                     <div className="slogan">
-                        <h2>
-                            <img src={banniere} alt="" className='image-banniere' />
+
+                        <h2 >
                             Chez vous, partout,et ailleurs!
                         </h2>
+                        <div>
+                            <img src={banniere} alt="" />
+                        </div>
 
                     </div>
                 </div>
-                <img src={banniere} alt="" className='image-banniere' />
 
                 <div className="cartes-appartements">
                     {apparts.map(appart => <Carte key={appart.id} appartement={appart} />)}
