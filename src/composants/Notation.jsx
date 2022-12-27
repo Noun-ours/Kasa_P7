@@ -1,27 +1,24 @@
-import React from 'react';
-import apparts from "../data/logements.json"
-import rating from "../data/logements.json"
+import etoileBasse from "../images/etoileBasse.png"
+import etoile from "../images/etoile.png"
 
-const Notation = () => {
-    const { id } = useParams();
-    const appt = apparts.find(appart => appart.id === id)
-    const laNote = rating.find(rate => rate.id === id)
-    const notation = [1, 2, 3, 4, 5];
-    const totalEtoiles = 5
-    function trouveLaNote() {
-        for (let note in notation) {
-            const nombreEtoiles = (notation[note] + totalEtoiles)
-        }
-        console.log(notation);
-    }
+const Notation = (props) => {
+    const notationColore = Array(5).fill(<img src={etoile} />)
+    const notationClairs = Array(5).fill(<img src={etoileBasse} />)
     return (
-        <div>
-            {appt.rating}
-            {laNote.rating}
+        <div className="etoile-star">
+            {/* {appt.rating} */}
+            {notationColore.slice(5 - props.note).map((notationColor, index) => {
+                return <div key={index} className='note-a-etoile'>{notationColor}</div>
+            }
+            )}
+            {notationClairs.slice(props.note).map((notationClair, index) => {
+                return <div key={index} className='note-a-etoile etoiles-grise'>{notationClair}</div>
+            }
+            )}
         </div>
     );
 };
 
 // const nbrEtoiles = Array(5).fill(`&#10029;`);
 //  const nbrEtoilesMoins = Array(5).fill()
-// export default Notation;
+export default Notation;

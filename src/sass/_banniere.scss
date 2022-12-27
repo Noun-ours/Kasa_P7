@@ -8,23 +8,37 @@
   align-items: center;
   font-size: 30px;
   font-weight: 500;
-  // box-shadow: 1px 1px 5px 1px black;
+  padding: 10px;
 
   // // background-image: url(../images/IMG.png);
   h2 {
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 50%;
+    transform: translateY(-50%);
     height: auto;
     z-index: 2;
     text-align: center;
     color: white;
+    font-size: 5vw;
+    // filter: brightness(1);
+    // mix-blend-mode: multiply;
+
+    // opacity: 1;
   }
   img {
     width: 100%;
+    // border: 1px solid black;
     object-fit: cover;
     border-radius: 15px;
     height: auto;
-    mix-blend-mode: darken;
+    filter: brightness(0.7);
+    // mix-blend-mode: multiply;
+  }
+}
+
+@media (max-width: 375px) {
+  .slogan {
+    height: 111px;
   }
 }
