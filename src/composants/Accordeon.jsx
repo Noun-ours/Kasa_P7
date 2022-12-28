@@ -9,9 +9,16 @@ export default function Accordeon(props) {
         <div className="accordeon">
             <div className={active ? "zoneDeContenu active" : "zoneDeContenu"} onClick={() => { setActive(!active) }}>
                 <div className="etiquette">{props.etiquette} <span>&#10095;</span> </div>
+
                 <div className="contenu">
-                    <p>{props.contenu}
-                    </p>
+                    {
+                        props.type === "liste" ?
+                            <ul>
+                                {props.contenu.map((equipement, index) => <li key={index}>{equipement}</li>)}
+                            </ul> :
+                            <p>{props.contenu}
+                            </p>
+                    }
                 </div>
             </div>
         </div>

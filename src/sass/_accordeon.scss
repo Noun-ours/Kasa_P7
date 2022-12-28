@@ -40,6 +40,12 @@
     color: #ff6060;
     // font-size: 25px;
     transition: 0.5s ease-out;
+    ul {
+      list-style: none;
+      li {
+        margin-block: 5px;
+      }
+    }
   }
   .zoneDeContenu.active .contenu {
     height: 100%;

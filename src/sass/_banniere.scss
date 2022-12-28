@@ -13,6 +13,7 @@
   // // background-image: url(../images/IMG.png);
   h2 {
     width: 100%;
+    padding-inline: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -20,7 +21,7 @@
     z-index: 2;
     text-align: center;
     color: white;
-    font-size: 5vw;
+    //font-size: 5vw;
     // filter: brightness(1);
     // mix-blend-mode: multiply;
 

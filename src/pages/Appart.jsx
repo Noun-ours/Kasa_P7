@@ -38,8 +38,8 @@ const Appart = () => {
                 </div>
             </section >
             <div className='accordeon-appart'>
-                <Accordeon className='accordeon' etiquette={"description"} contenu={[appt.description]} />
-                <Accordeon className='accordeon' etiquette={"equipements"} contenu={[appt.equipments]} />
+                <Accordeon className='accordeon' etiquette={"description"} contenu={appt.description} />
+                <Accordeon className='accordeon' etiquette={"equipements"} contenu={appt.equipments} type={"liste"} />
             </div>
         </div >
     );

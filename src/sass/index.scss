@@ -101,13 +101,15 @@ main {
     justify-content: space-between;
     // border: 1px solid green;
     flex-wrap: wrap;
-
+    max-width: 1240px;
     // flex-direction: column-reverse;
     // justify-items: flex-end;
-    max-width: 80%;
+    // max-width: 80%;
     margin: 30px auto;
     .description {
       background-color: blueviolet;
+      // margin: 0 auto;
+      // width: 80%;
     }
     h3 {
       // border: 1px solid yellow;
@@ -120,10 +122,11 @@ main {
     }
     .span-tag {
       display: flex;
+      flex-wrap: wrap;
       // background-color: coral;
       // flex-wrap: wrap;
-      width: 115px;
-      min-width: 505px;
+      //width: 115px;
+      //min-width: 505px;
       gap: 10px;
     }
     span {
@@ -173,7 +176,9 @@ main {
   display: flex;
   // justify-content: space-between;
   gap: 25px;
-  border-radius: 10px;
+  //border-radius: 10px;
+  margin-inline: auto;
+  max-width: 1240px;
   // width: clamp(250px, 70%, 1250px);
   // width: 1440px;
   // border: 1px solid rgb(223, 27, 27);
@@ -181,13 +186,71 @@ main {
   flex-wrap: wrap;
   .accordeon {
     margin: 0 auto;
-    width: 480px;
-    display: flex;
-    justify-content: space-between;
+    width: 48%;
+    // display: flex;
+    // justify-content: space-between;
     // max-width: 450px;
     // border: 2px solid black;
   }
 }
+
+.fototag {
+  display: flex;
+  // border: 1px solid pink;
+  width: 16%;
+  flex-flow: wrap;
+  .info-hote {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+    .nom-hote {
+      // border: 2px solid black;
+      width: 90px;
+    }
+  }
+}
+.notation {
+  position: relative;
+  display: flex;
+  // order: 1;
+  //border: 2px solid black;
+}
+
+.etoile-star {
+  // position: absolute;
+  // overflow: hidden;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  // text-align: center;
+  // color: rgb(255, 255, 255);
+  // background-color: #ff6060;
+  //border: 2px solid black;
+  // height: 30px;
+  // min-width: 150px;
+  font-size: 14px;
+  margin: 20px auto;
+  // padding: 5px;
+}
+.note-a-etoile {
+  display: flex;
+  max-width: 100px;
+  font-size: 40px;
+
+  justify-content: space-between;
+}
+.etoiles-grise {
+  color: #6f6f6f;
+}
+
 footer {
   position: relative;
   background-color: #000000;
@@ -209,65 +272,48 @@ footer {
   }
 }
 
-.fototag {
-  display: flex;
-  // border: 1px solid pink;
-  width: 16%;
-  flex-flow: wrap;
-  .info-hote {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-
-    img {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      margin-left: 10px;
-    }
-    .nom-hote {
-      border: 2px solid black;
-      width: 90px;
-    }
+@media (max-width: 1200px) {
+  .page-appart .info-appart .description {
+    width: 100%;
   }
-}
-.notation {
-  position: relative;
-  display: flex;
-  // order: 1;
-}
-
-.etoile-star {
-  // position: absolute;
-  // overflow: hidden;
-  width: 200px;
-  height: 40px;
-  display: flex;
-  justify-content: space-around;
-  // text-align: center;
-  // color: rgb(255, 255, 255);
-  // background-color: #ff6060;
-  // border: 2px solid black;
-  // height: 30px;
-  // min-width: 150px;
-  font-size: 14px;
-  margin: 60px auto;
-  // padding: 5px;
-}
-.note-a-etoile {
-  display: flex;
-  max-width: 100px;
-  font-size: 40px;
-
-  justify-content: space-between;
-}
-.etoiles-grise {
-  color: #6f6f6f;
+  .fototag {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 992px) {
   .fototag {
     flex-direction: row-reverse;
     width: 100%;
+  }
+  .accordeon-appart .accordeon {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slogan h2 {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 375px) {
+  .slogan h2 {
+    font-size: 80%;
+  }
+  .span-tag {
+    max-width: 375px;
+  }
+  .description {
+    width: 80%;
+  }
+  .slogan {
+    // margin-top: 50px;
+    // margin-bottom: 70px;
+  }
+  .slogan img {
+    height: 111px;
   }
 }

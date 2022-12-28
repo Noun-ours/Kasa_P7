@@ -10,7 +10,7 @@ const Accueil = () => {
                     <div className="slogan">
 
                         <h2 >
-                            Chez vous, partout,et ailleurs!
+                            Chez vous, partout et ailleurs!
                         </h2>
                         <div>
                             <img src={banniere} alt="" />
