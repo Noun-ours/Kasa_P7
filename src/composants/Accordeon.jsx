@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 
 export default function Accordeon(props) {
@@ -9,7 +8,6 @@ export default function Accordeon(props) {
         <div className="accordeon">
             <div className={active ? "zoneDeContenu active" : "zoneDeContenu"} onClick={() => { setActive(!active) }}>
                 <div className="etiquette">{props.etiquette} <span>&#10095;</span> </div>
-
                 <div className="contenu">
                     {
                         props.type === "liste" ?

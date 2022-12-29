@@ -1,8 +1,5 @@
 import React from 'react';
-// import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
 import apparts from "../data/logements.json"
-// import images from "../data/logements.json"
 import { useParams } from 'react-router-dom';
 import Carrousel from "../composants/Carrousel"
 import Accordeon from "../composants/Accordeon"
@@ -27,7 +24,6 @@ const Appart = () => {
                 <div className='fototag' >
                     <div className='info-hote'>
                         <div className='nom-hote'>
-
                             {appt.host.name}
                         </div>
                         <img src={appt.host.picture} alt={appt.host.name} />

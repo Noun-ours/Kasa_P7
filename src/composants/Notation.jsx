@@ -6,7 +6,6 @@ const Notation = (props) => {
     const notationClairs = Array(5).fill(<img src={etoileBasse} />)
     return (
         <div className="etoile-star">
-            {/* {appt.rating} */}
             {notationColore.slice(5 - props.note).map((notationColor, index) => {
                 return <div key={index} className='note-a-etoile'>{notationColor}</div>
             }
@@ -19,6 +18,5 @@ const Notation = (props) => {
     );
 };
 
-// const nbrEtoiles = Array(5).fill(`&#10029;`);
-//  const nbrEtoilesMoins = Array(5).fill()
+
 export default Notation;

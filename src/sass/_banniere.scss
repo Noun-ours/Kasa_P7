@@ -10,7 +10,6 @@
   font-weight: 500;
   padding: 10px;
 
-  // // background-image: url(../images/IMG.png);
   h2 {
     width: 100%;
     padding-inline: 20px;
@@ -21,20 +20,13 @@
     z-index: 2;
     text-align: center;
     color: white;
-    //font-size: 5vw;
-    // filter: brightness(1);
-    // mix-blend-mode: multiply;
-
-    // opacity: 1;
   }
   img {
     width: 100%;
-    // border: 1px solid black;
     object-fit: cover;
     border-radius: 15px;
     height: auto;
     filter: brightness(0.7);
-    // mix-blend-mode: multiply;
   }
 }
 

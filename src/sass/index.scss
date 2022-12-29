@@ -26,7 +26,6 @@ img {
 }
 .App-header {
   position: relative;
-  // background: #e5e5e5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,19 +33,9 @@ img {
   font-size: calc(10px + 2vmin);
   margin: auto;
   max-width: 1240px;
-
-  // color: rgb(233, 48, 48);
 }
-// .logo-nav {
-//   background-color: rgb(26, 181, 63);
-//   display: flex;
-//   justify-content: space-between;
-//   flex-direction: row;
-//   align-items: stretch;
-//   width: 1150px;
-// }
+
 main {
-  // width: 1240px;
   min-height: calc(100vh - 130px);
 }
 .liste-appartements {
@@ -56,8 +45,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  // background-color: rgba(0, 0, 0, 0.4);
-  // border: 1px solid red;
 }
 .cartes-appartements {
   display: flex;
@@ -71,16 +58,12 @@ main {
   background-color: #f7f7f7;
   height: 100%;
   padding: 10px;
-  // opacity: 1.5;
-  // filter: opacity(100%);
 }
 
 .fiche-resume {
   display: flex;
   overflow: hidden;
-  // height: 100px;
   flex-direction: column;
-  // flex-direction: row;
   margin: 50px auto;
   width: 1240px;
 }
@@ -89,8 +72,6 @@ main {
   width: 1250px;
   height: 415px;
   overflow: hidden;
-
-  // background-color: aqua;
 }
 
 .page-appart {
@@ -99,22 +80,11 @@ main {
   .info-appart {
     display: flex;
     justify-content: space-between;
-    // border: 1px solid green;
     flex-wrap: wrap;
     max-width: 1240px;
-    // flex-direction: column-reverse;
-    // justify-items: flex-end;
-    // max-width: 80%;
     margin: 30px auto;
-    .description {
-      background-color: blueviolet;
-      // margin: 0 auto;
-      // width: 80%;
-    }
     h3 {
-      // border: 1px solid yellow;
-      max-width: 85%;
-      font-size: 36px;
+      font-size: 160%;
     }
     h4 {
       font-size: 18px;
@@ -123,10 +93,6 @@ main {
     .span-tag {
       display: flex;
       flex-wrap: wrap;
-      // background-color: coral;
-      // flex-wrap: wrap;
-      //width: 115px;
-      //min-width: 505px;
       gap: 10px;
     }
     span {
@@ -140,63 +106,24 @@ main {
       border-radius: 8px;
       height: 30px;
       width: 180px;
-      // max-width: 100%;
-      // font-size: 14px;
-      // margin-right: 10px;
-      // padding: 5px;
     }
   }
-  // .info-hote {
-  //   display: flex;
-  //   align-items: center;
-  //   font-size: 18px;
-  //   img {
-  //     width: 64px;
-  //     height: 64px;
-  //     border-radius: 50%;
-  //     margin-left: 10px;
-  //   }
-  // }
 }
-
-// .span-tag {
-//   display: inline-block;
-//   text-align: center;
-//   color: rgb(255, 255, 255);
-//   // background-color: #ff6060;
-//   border-radius: 15px;
-//   height: 30px;
-//   min-width: 150px;
-//   font-size: 14px;
-//   margin-right: 10px;
-//   padding: 5px;
-// }
 
 .accordeon-appart {
   display: flex;
-  // justify-content: space-between;
   gap: 25px;
-  //border-radius: 10px;
   margin-inline: auto;
   max-width: 1240px;
-  // width: clamp(250px, 70%, 1250px);
-  // width: 1440px;
-  // border: 1px solid rgb(223, 27, 27);
-  // background-color: aqua;
   flex-wrap: wrap;
   .accordeon {
     margin: 0 auto;
     width: 48%;
-    // display: flex;
-    // justify-content: space-between;
-    // max-width: 450px;
-    // border: 2px solid black;
   }
 }
 
 .fototag {
   display: flex;
-  // border: 1px solid pink;
   width: 16%;
   flex-flow: wrap;
   .info-hote {
@@ -211,7 +138,6 @@ main {
       margin-left: 10px;
     }
     .nom-hote {
-      // border: 2px solid black;
       width: 90px;
     }
   }
@@ -219,26 +145,16 @@ main {
 .notation {
   position: relative;
   display: flex;
-  // order: 1;
-  //border: 2px solid black;
 }
 
 .etoile-star {
-  // position: absolute;
-  // overflow: hidden;
   width: 200px;
   height: 40px;
   display: flex;
   justify-content: space-around;
-  // text-align: center;
-  // color: rgb(255, 255, 255);
-  // background-color: #ff6060;
-  //border: 2px solid black;
-  // height: 30px;
-  // min-width: 150px;
+
   font-size: 14px;
   margin: 20px auto;
-  // padding: 5px;
 }
 .note-a-etoile {
   display: flex;
@@ -250,6 +166,30 @@ main {
 .etoiles-grise {
   color: #6f6f6f;
 }
+.erreur {
+  height: 700px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 50px;
+  .h1-erreur {
+    h1 {
+      border: 5px dotted rgb(253, 253, 8);
+      margin: 0px auto;
+    }
+  }
+  p {
+    font-size: xx-large;
+  }
+
+  a {
+    width: auto;
+    color: #ff6060;
+  }
+}
 
 footer {
   position: relative;
@@ -259,12 +199,10 @@ footer {
   height: 210px;
   color: white;
   .logo-footer {
-    // position: absolute;
     margin: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    // filter: brightness(10);
     img {
       display: inline-block;
       margin-top: 40px;
@@ -297,6 +235,17 @@ footer {
   .slogan h2 {
     font-size: 95%;
   }
+  .erreur {
+    h1 {
+      font-size: 160px;
+    }
+    p {
+      font-size: 140%;
+    }
+  }
+  .logo-nav img {
+    height: 45px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -309,10 +258,7 @@ footer {
   .description {
     width: 80%;
   }
-  .slogan {
-    // margin-top: 50px;
-    // margin-bottom: 70px;
-  }
+
   .slogan img {
     height: 111px;
   }
