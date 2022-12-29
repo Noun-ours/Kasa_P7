@@ -96,7 +96,6 @@ main {
       gap: 10px;
     }
     span {
-      // display: inline-block;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -168,7 +167,6 @@ main {
 }
 .erreur {
   height: 700px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,7 +175,6 @@ main {
   padding: 50px;
   .h1-erreur {
     h1 {
-      border: 5px dotted rgb(253, 253, 8);
       margin: 0px auto;
     }
   }
