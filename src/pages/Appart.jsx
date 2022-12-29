@@ -1,6 +1,6 @@
-import React from 'react';
+import { useEffect } from 'react';
 import apparts from "../data/logements.json"
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Carrousel from "../composants/Carrousel"
 import Accordeon from "../composants/Accordeon"
 import Notation from '../composants/Notation';
@@ -8,8 +8,17 @@ import Notation from '../composants/Notation';
 
 const Appart = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     const appt = apparts.find(appart => appart.id === id)
-
+    useEffect(() => {
+        if (!appt) {
+            navigate("/404");
+            return;
+        }
+    }, []);
+    if (!appt) {
+        return (<div className='page-appart'>Chargement...</div>)
+    }
     return (
         <div className='page-appart'>
             <Carrousel images={appt.pictures} />
